@@ -23,3 +23,39 @@ Multiple A records may indicate load balancing, CDN usage or geographically disr
 
 TTL:
 244 seconds
+
+===== AAAA RECORD =====
+
+Command: dig tesla.com AAAA
+
+Result:
+No AAAA records were returned for tesla.com
+
+Observation:
+No IPv6 address was returned for the queried domain
+
+SOA:
+edns69.ultradns.com.
+
+Responsible mailbox:
+domain.teslamotors.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
