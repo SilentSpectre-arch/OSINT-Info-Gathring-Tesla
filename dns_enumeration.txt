@@ -40,10 +40,25 @@ edns69.ultradns.com.
 Responsible mailbox:
 domain.teslamotors.com
 
+===== MX RECORD =====
 
+command:
+dig tesla.com MX
 
+Result:
+tesla.com has 1 MX record
 
+Priority:
+10
 
+Mail Server:
+tesla-com.mail.protection.outlook.com
+
+Email Infrastructure:
+Microsoft Outlook / Exchange Online Protection
+
+TTL:
+300 seconds
 
 
 
