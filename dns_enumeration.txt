@@ -1,0 +1,25 @@
+===== A RECORD =====
+
+Command:
+dig tesla.com A
+
+Finding:
+tesla.com resolves to multiple IPV4 addresses.
+
+IPv4 Addresses:
+2.18.49.207
+2.18.54.207
+2.18.50.207
+2.18.52.207
+23.40.100.207
+23.7.244.207
+2.18.51.207
+2.18.55.207
+2.18.53.207
+2.18.48.207
+
+Observation:
+Multiple A records may indicate load balancing, CDN usage or geographically disributed infrastructure.
+
+TTL:
+244 seconds
