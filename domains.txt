@@ -1,42 +1,42 @@
-1- tesla.com
-2- shop.tesla.com
-3- ir.tesla.com -> Investor Relations
+tesla.com
+shop.tesla.com
+ir.tesla.com -> Investor Relations
 
 ## Information in vedbex
 
-Subdomain	IP Address	Reverse proxy
-events.tesla.com 13.111.47.195 	 N/A
-service.tesla.com	104.116.96.55 	 N/A
-share.tesla.com	209.133.79.61 	 N/A
-accounts.tesla.com	104.116.96.55 	 N/A
-shop.tesla.com	104.116.96.55 	 N/A
-hub.tesla.com	104.107.108.211 	 N/A
-sso.tesla.com	104.116.96.55 	 N/A
-link.tesla.com	104.116.96.55 	 N/A
-links.tesla.com	104.116.96.55 	 N/A
-static.tesla.com	104.116.96.55 	 N/A
-apps.tesla.com	104.116.96.55 	 N/A
-tesla.com	104.116.96.55 	 N/A
-stream.tesla.com	104.116.96.55 	 N/A
-atom.tesla.com	104.116.96.55 	 N/A
-auth.tesla.com	104.116.96.55 	 N/A
-autodiscover.tesla.com	52.97.215.120 	 N/A
-emails.tesla.com	13.111.18.27 	 N/A
-vpn2.tesla.com	8.47.24.215 	 N/A
-developer.tesla.com	104.116.96.55 	 N/A
-marketing.tesla.com	13.111.47.196 	 N/A
-meet.tesla.com	209.133.79.61 	 N/A
-billing.tesla.com	104.116.96.55 	 N/A
-mobile.tesla.com	2.22.120.118 	 N/A
-workplace.tesla.com	2.22.120.118 	 N/A
-track.tesla.com	104.116.96.55 	 N/A
-tracking.tesla.com	104.116.96.55 	 N/A
-business.tesla.com	104.116.96.55 	 N/A
-echo.tesla.com	104.116.96.55 	 N/A
-feedback.tesla.com	199.120.34.33 	 N/A
-partners.tesla.com	104.116.96.55 	 N/A
-pay.tesla.com	104.116.96.55 	 N/A
-profile.tesla.com	104.116.96.55 	 N/A
-courses.tesla.com	104.116.96.55 	 N/A
-engage.tesla.com	18.245.199.48 	 N/A
+Subdomain	
+events.tesla.com 
+service.tesla.com	
+share.tesla.com	
+accounts.tesla.com	
+shop.tesla.com	
+hub.tesla.com	
+sso.tesla.com	
+link.tesla.com
+links.tesla.com	
+static.tesla.com	
+apps.tesla.com	
+tesla.com	
+stream.tesla.com	
+atom.tesla.com	
+auth.tesla.com	
+autodiscover.tesla.com	
+emails.tesla.com	
+vpn2.tesla.com	
+developer.tesla.com	
+marketing.tesla.com	
+meet.tesla.com	
+billing.tesla.com	
+mobile.tesla.com	
+workplace.tesla.com	
+track.tesla.com	
+tracking.tesla.com	
+business.tesla.com	
+echo.tesla.com	
+feedback.tesla.com	
+partners.tesla.com	
+pay.tesla.com	
+profile.tesla.com	
+courses.tesla.com	
+engage.tesla.com	
 
