@@ -1,0 +1,14 @@
+
+Session Scope
+
+FQDN:
+
+azure-dns.org
+tesla.com
+outlook.com
+azure-dns.net
+azure-dns.com
+
+Organization:
+
+domain administrator
