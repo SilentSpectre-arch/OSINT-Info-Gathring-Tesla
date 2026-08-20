@@ -81,11 +81,29 @@ Key Findings:
 SPF Observatoin:
 The SPF policy authorizes multiple third-party email services, including Microsoft 365, SendGrid, Zendesk, Qualtrics, KnowBe4 and SendCloud
 
+===== DMARC RECORD ====
 
+Command:
+dig @1.1.1.1 _dmarc.tesla.com TXT
 
+Policy:
+v=DMARC1
 
+Enforcement:
+p=reject
 
+Coverage:
+pct=100
 
+Reporting:
+rua=ag.dmarcian.com
+ruf=fr.dmarcian.com
+
+Failure Option:
+fo=1
+
+Observation:
+Tesla enforces a strcit DMARC policy by rejecting unauthenticated emails and applies the policy to 100% of messages. DMARC reports are configured through Dmarcian
 
 
 
