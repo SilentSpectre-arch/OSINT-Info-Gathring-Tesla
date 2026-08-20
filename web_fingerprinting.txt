@@ -16,3 +16,22 @@ Date: 2026-08-20
 
 Assessment:
 - Akami CDN/infrastruture detected; possible edge security/WAF layer
+
+[Finding]
+Target: tesla.com
+Tool: curl -I
+Date: 2026-08-20
+
+[1] HTTP Response:
+	- Status: 403 
+
+[2] CDN / Edge Infrastructure:
+	- Server: AkamiGHost
+	- X-AK-Cache: Error form child
+
+[3] Akamai Error Identification:
+	- X-Reference-Error header observed.
+	- Indicates an Akamai-generated error/reference response.
+
+[4] Assessment:
+- Origin server technology could not be identified from this response
