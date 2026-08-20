@@ -4,7 +4,7 @@ Tool: whatweb
 Date: 2026-08-20
 
 1. Web Server / CDN:
-	- Akami Global Hot detected
+	- Akamai Global Hot detected
 	- HTTPServer: AkamiGHost
 
 2. HTTP Respone:
@@ -58,9 +58,9 @@ Date: 2026-08-20
 - Origin server IP was not identified
 
 [2] CDN/Edge:
-	- AkamiGHost detected
+	- AkamaiGHost detected
 	- X-AK-Cache header detected
-	- Akami EdgeSuit error URL observed
+	- Akamai EdgeSuit error URL observed
 
 [3] TLS:
 	- TLS 1.3
@@ -90,7 +90,7 @@ Date: 2026-08-20
 - Permissions-Policy: interest-cohort=()
 
 [Assessment]
-- Target is protected/servers throgh Akami edge infrastructure
+- Target is protected/servers throgh Akamai edge infrastructure
 - Origin server technology and origin IP were not identified
 - No vulnerability is inferred from the 403 response alone
 
@@ -99,5 +99,5 @@ Target: tesla.com
 Tool : wafw00f
 
 [WAF]
-- Kona SiteDefender (Akami) detected
+- Kona SiteDefender (Akamai) detected
 - Reuests:2
