@@ -60,7 +60,26 @@ Microsoft Outlook / Exchange Online Protection
 TTL:
 300 seconds
 
+===== TXT RECORD =====
 
+Command:
+dig @1.1.1.1 tesla.com TXT
+
+Summary:
+35 TXT records identified
+
+Key Findings:
+- SPF policy present
+- Microsoft 365 verification records found
+- Google domain verification records found
+- Apple domain verification records found
+- Bugcrowd verification records found
+- Atlassian verification records found
+- Cloudflare Dashboard SSO verification found
+- Additional verification records for Dcoker, Jamf, Teamviewer,OneTrust,Zapier,LogMeIn,Adobe,Dell Technologies and Cursor
+
+SPF Observatoin:
+The SPF policy authorizes multiple third-party email services, including Microsoft 365, SendGrid, Zendesk, Qualtrics, KnowBe4 and SendCloud
 
 
 
