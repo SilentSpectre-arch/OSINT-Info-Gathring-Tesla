@@ -1,0 +1,46 @@
+===== WHOIS ENUMERATION =====
+
+Target:
+tesla.com
+
+Registrar:
+MarkMonitor Inc. (IANA ID: 292)
+
+Registration:
+Created: 1992-11-04
+Updated: 2024-10-02
+Expires: 2026-11-03
+
+Registrant:
+Organization: DNStination INC
+Location: San Francisco, California, US
+
+Domain Protection:
+- clientDeleteProhibited
+- clientTransferProhibited
+- clientUpdateProhibited
+- serverDeleteProhibited
+- serverTransferProhibited
+- serverUpdateProhibited
+
+DNSSEC:
+unsigned
+
+Name Servers:
+- a1-12.akam.net
+- a7-66.akam.net
+- a9-67.akam.net
+- a10-67.akam.net
+- a12-64.akam.net
+- a28-65.akam.net
+- edns69.ultradns.com
+- edns69.ultradns.net
+- edns69.ultradns.org
+- edns69.ultradns.biz
+
+Key Findings:
+- Long-established domain registred in 1992
+- Enterprise registrar (MarkMonitor)
+- Strong domain transfer/update protection enabled
+- DNS infrastructure uses Akami and UltraDNS
+- DNSSEC is not enabled according to WHOIS
