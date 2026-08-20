@@ -93,3 +93,11 @@ Date: 2026-08-20
 - Target is protected/servers throgh Akami edge infrastructure
 - Origin server technology and origin IP were not identified
 - No vulnerability is inferred from the 403 response alone
+
+[Finding]
+Target: tesla.com
+Tool : wafw00f
+
+[WAF]
+- Kona SiteDefender (Akami) detected
+- Reuests:2
