@@ -1,0 +1,18 @@
+[Finding]
+Target: tesla.com
+Tool: whatweb
+Date: 2026-08-20
+
+1. Web Server / CDN:
+	- Akami Global Hot detected
+	- HTTPServer: AkamiGHost
+
+2. HTTP Respone:
+	- http://tesla.com -> 403
+	- Title: Access Denied
+
+3. IP:
+	- 2.18.48.207
+
+Assessment:
+- Akami CDN/infrastruture detected; possible edge security/WAF layer
