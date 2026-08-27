@@ -109,3 +109,24 @@ No AAAA records were returned for `tesla.com`
 #### Observation
 
 No publicly accessible IPv6 address was returned for the queried domain.
+
+### 3.3 MX Record Enumeration
+
+````bash
+dig tesla.com MX
+````
+
+#### Findings
+
+The domain has a single mail exchanger.
+
+| Value | Field |
+| --- | ---: |
+| 10 | Priority |
+| tesla-com.mail.protection.outlook.com | Mail Server |
+| Microsoft Outlook / Exchange Online Protection | Email Platform |
+| TTL | 300 seconds |
+
+#### Observation 
+
+The MX configuration indicates that Tesla uses Microsoft Exchange Online Protection(EOP) as its public email gateway.
