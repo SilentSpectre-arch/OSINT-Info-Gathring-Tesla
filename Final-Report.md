@@ -85,3 +85,23 @@ The domain `tesla.com` resolved to multiple IPv3 addresses
 2.18.48.207
 
 - TTL: 244 seconds
+
+### AAAA Record Enumeration
+
+````bash
+dig tesla.com AAAA
+````
+
+#### Findings
+
+No AAAA records were returned for `tesla.com`
+
+| Value | Field |
+| --- | ---: |
+| None | IPv6 Address |
+| edns69.ultradns.com | SOA Server |
+| domain.teslamotors.com | Responsible Mailbox |
+
+#### Observation
+
+No publicly accessible IPv6 address was returned for the queried domain.
