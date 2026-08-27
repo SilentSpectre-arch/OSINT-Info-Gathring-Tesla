@@ -86,6 +86,10 @@ The domain `tesla.com` resolved to multiple IPv3 addresses
 
 - TTL: 244 seconds
 
+#### Observation
+
+The presence of multiple A records suggests the use of Load balancing, Contenet Delivery Network (CDN) infrastructure , or geographically distributed hosting.
+
 ### AAAA Record Enumeration
 
 ````bash
