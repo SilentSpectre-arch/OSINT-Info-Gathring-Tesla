@@ -151,3 +151,17 @@ A total of 35 TXT records were identified
 - Atlassian verification
 - Cloudflare Dashboard SSO verification
 - Additional verification records for Docker, Jamf, TeamViewer, OneTrust, Zapier, LogMeIn, Adobe, Dell Technologies, and Cursor
+
+#### SPF Observation
+
+The SPF policy authorizes multiple third-party services, including:
+- Microsoft 365
+- SendGrid
+- Zendesk
+- Qualtrics
+- KnowBe4
+- SendCloud
+
+#### Observation
+
+The TXT records reveal extensive integration with cloud and enterprise services. These records are expected for a large organization but provide valuable context for attack surface mapping during reconnaissance.
