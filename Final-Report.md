@@ -59,3 +59,29 @@ Tesla was founded in 2003 by Martin Eberhard and Marc Tarpenning. The company wa
 
 The company has expanded from its initial focus on electric vehicles into additional areas including energy storage and solar power.
 
+## 3. DNS Enumeration
+
+### 3.1 A Record Enumeration
+
+````bash
+dig tesla.com A
+````
+
+#### Findings
+
+The domain `tesla.com` resolved to multiple IPv3 addresses
+
+| IPv4 Addresses |
+| --- |
+2.18.49.207
+2.18.54.207
+2.18.50.207
+2.18.52.207
+23.40.100.207
+23.7.244.207
+2.18.51.207
+2.18.55.207
+2.18.53.207
+2.18.48.207
+
+- TTL: 244 seconds
