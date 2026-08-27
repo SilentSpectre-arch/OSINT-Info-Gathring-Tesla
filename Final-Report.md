@@ -130,3 +130,24 @@ The domain has a single mail exchanger.
 #### Observation 
 
 The MX configuration indicates that Tesla uses Microsoft Exchange Online Protection(EOP) as its public email gateway.
+
+### TXT Record Enumeration
+
+````bash
+dig @1.1.1.1 tesla.com TXT
+````
+
+#### Findings
+
+A total of 35 TXT records were identified
+
+#### Key Findings
+
+- SPF Policy present
+- Microsoft 365 verification records
+- Google domain verification
+- Apple domain verification
+- Bugcrowd verification
+- Atlassian verification
+- Cloudflare Dashboard SSO verification
+- Additional verification records for Docker, Jamf, TeamViewer, OneTrust, Zapier, LogMeIn, Adobe, Dell Technologies, and Cursor
