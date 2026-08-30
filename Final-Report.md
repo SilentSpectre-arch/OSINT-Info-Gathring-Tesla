@@ -543,3 +543,29 @@ The domain's DNS infrastructure uses **Akamai** and **UltraDNS** name servers, c
 WHOIS enumeration revealed a long-established domain registered through an enterprise registrar with multiple domain protection mechanisms enabled. The domain uses distributed DNS infrastructure involving Akamai and UltraDNS.
 
 DNSSEC was reported as unsigned. This was recorded as an architectural observation rather than a confirmed vulnerability.
+
+
+## 6. GitHub Enumeration
+
+**Target:** Tesla GitHub Organization
+
+**Source:** [https://github.com/teslamotors](https://github.com/teslamotors?utm_source=chatgpt.com)
+
+### Findings
+
+The official Tesla GitHub organization was reviewed as part of the passive reconnaissance phase. The organization is verified by GitHub and controls the `www.tesla.com` domain.
+
+Public repositories and available organization information were reviewed for potentially sensitive information such as:
+
+* Exposed credentials or API keys
+* Configuration files
+* Internal hostnames
+* Sensitive source code
+* Infrastructure information
+* Other information that could expand the external attack surface
+
+No security-sensitive information or directly exploitable finding was identified during this review.
+
+### Assessment
+
+The GitHub organization was recorded as part of the target's public attack surface. No actionable security finding was identified from the performed review.
