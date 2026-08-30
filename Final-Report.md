@@ -186,3 +186,34 @@ dig @1.1.1.1 _damrc.tesla.com TXT
 #### Observation
 
 Tesla enforces a strict DMARC policy by rejecting unauthenticated emails and applying the policy to 100% of messages. DMARC reporting is configured through Dmarcian,indicating active monitoring of email authentication.
+
+
+### 3.6 CNAME Enumeration
+
+````bash
+dig tesla.com CNAME
+````
+
+#### Findings
+No CNAME record exist for the apex domain.
+
+| Field | Value |
+| --- | ---: |
+| CNAME | None |
+| Primary DNS | edns69.ultradns.com |
+| Responsible Mailbox | domain.teslamotors.com |
+
+#### Observation
+
+The root domain resolves directly through A record rather than refrencing another hostname via CNAME.
+
+### DNS Enumeration Summary
+
+| Record Type | Result |
+| --- | ---: |
+| A | Multiple IPv4 addresses |
+| AAAA | No IPv6 record |
+| MX | Microsoft Exchange Online Protection |
+| TXT | 35 records including SPF and service verifications |
+| DMARC | p=reject, pct=100 |
+| CNAME | None |
