@@ -262,10 +262,6 @@ The results indicate that the target is served through **Akamai edge/CDN infrast
 
 The observed `403 Forbidden` response indicates that access was denied by the edge infrastructure. This response alone does not indicate a vulnerability.
 
-### Evidence
-
-![WhatWeb Results](screenshots/whatweb.png)
-
 ---
 
 ## 4.2 HTTP Header Analysis with curl
