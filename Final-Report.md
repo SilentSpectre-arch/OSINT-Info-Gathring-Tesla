@@ -131,7 +131,7 @@ The domain has a single mail exchanger.
 
 The MX configuration indicates that Tesla uses Microsoft Exchange Online Protection(EOP) as its public email gateway.
 
-### TXT Record Enumeration
+### 3.4 TXT Record Enumeration
 
 ````bash
 dig @1.1.1.1 tesla.com TXT
@@ -165,3 +165,24 @@ The SPF policy authorizes multiple third-party services, including:
 #### Observation
 
 The TXT records reveal extensive integration with cloud and enterprise services. These records are expected for a large organization but provide valuable context for attack surface mapping during reconnaissance.
+
+### 3.5 DMARC Enumeration
+
+````bash
+dig @1.1.1.1 _damrc.tesla.com TXT
+````
+
+#### Findings
+
+| Field | Value |
+| --- | ---: |
+| Version | DMARC1 |
+| Policy | p=reject |
+| Percentage | 100% |
+| Aggregates Reports | ag.dmarcian.com |
+| Forensic Reports | fr.dmarcian.com |
+| Failure Option | fo=1 |
+
+#### Observation
+
+Tesla enforces a strict DMARC policy by rejecting unauthenticated emails and applying the policy to 100% of messages. DMARC reporting is configured through Dmarcian,indicating active monitoring of email authentication.
