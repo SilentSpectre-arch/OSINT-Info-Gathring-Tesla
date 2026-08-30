@@ -431,3 +431,115 @@ The presence of a WAF is an important component of the target's external securit
 The reconnaissance identified **Akamai CDN/edge infrastructure and Kona SiteDefender WAF protection** in front of the target. HTTP requests to the target resulted in `403 Forbidden` responses, and the origin server could not be identified from the collected responses.
 
 No vulnerability is inferred solely from the observed CDN, WAF, or `403 Forbidden` response.
+
+
+# 5. WHOIS Enumeration
+
+## Objective
+
+The objective of this phase was to collect publicly available registration and administrative information for the target domain `tesla.com`. WHOIS enumeration can provide information about domain ownership, registrar infrastructure, registration dates, domain protection mechanisms, DNS infrastructure, and DNSSEC status.
+
+**Target:** `tesla.com`
+
+---
+
+## 5.1 Domain Registration Information
+
+| Attribute                   | Value                         |
+| --------------------------- | ----------------------------- |
+| **Registrar**               | MarkMonitor Inc.              |
+| **IANA ID**                 | 292                           |
+| **Domain Created**          | 1992-11-04                    |
+| **Last Updated**            | 2024-10-02                    |
+| **Expiration Date**         | 2026-11-03                    |
+| **Registrant Organization** | DNStination INC               |
+| **Registrant Location**     | San Francisco, California, US |
+
+### Observation
+
+The domain has been registered since **1992**, indicating a long-established domain presence. The domain is registered through **MarkMonitor Inc.**, an enterprise-focused domain registrar and brand protection provider.
+
+---
+
+## 5.2 Domain Protection
+
+The following domain protection statuses were identified:
+
+```text id="t5wqz2"
+clientDeleteProhibited
+clientTransferProhibited
+clientUpdateProhibited
+serverDeleteProhibited
+serverTransferProhibited
+serverUpdateProhibited
+```
+
+### Assessment
+
+The domain has multiple client- and server-side restrictions against unauthorized deletion, transfer, and modification.
+
+These controls provide additional protection against unauthorized domain management actions such as:
+
+* Unauthorized domain transfer
+* Unauthorized domain deletion
+* Unauthorized registration updates
+
+The presence of these protections represents a positive security control for the domain.
+
+---
+
+## 5.3 DNSSEC Status
+
+**DNSSEC:** `Unsigned`
+
+### Observation
+
+The WHOIS information indicates that DNSSEC is not enabled for the domain.
+
+### Assessment
+
+The absence of DNSSEC means that DNS responses for the domain are not cryptographically authenticated through DNSSEC.
+
+However, **the absence of DNSSEC alone does not constitute a confirmed vulnerability**. The security impact depends on the organization's DNS architecture, threat model, and other DNS security controls.
+
+---
+
+## 5.4 Name Servers
+
+The following name servers were identified:
+
+```text id="5bhrf3"
+a1-12.akam.net
+a7-66.akam.net
+a9-67.akam.net
+a10-67.akam.net
+a12-64.akam.net
+a28-65.akam.net
+edns69.ultradns.com
+edns69.ultradns.net
+edns69.ultradns.org
+edns69.ultradns.biz
+```
+
+### Assessment
+
+The domain's DNS infrastructure uses **Akamai** and **UltraDNS** name servers, consistent with the distributed DNS and edge infrastructure observed during previous reconnaissance activities.
+
+---
+
+## 5.5 Key Findings
+
+| Finding             | Assessment                                                   |
+| ------------------- | ------------------------------------------------------------ |
+| Domain Registration | Registered since 1992                                        |
+| Registrar           | MarkMonitor Inc.                                             |
+| Domain Protection   | Client and server transfer/update/delete protections enabled |
+| DNS Infrastructure  | Akamai and UltraDNS                                          |
+| DNSSEC              | Unsigned                                                     |
+| Registrant          | DNStination INC                                              |
+
+### Overall Assessment
+
+WHOIS enumeration revealed a long-established domain registered through an enterprise registrar with multiple domain protection mechanisms enabled. The domain uses distributed DNS infrastructure involving Akamai and UltraDNS.
+
+DNSSEC was reported as unsigned. This was recorded as an architectural observation rather than a confirmed vulnerability.
